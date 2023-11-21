@@ -179,6 +179,18 @@ return [
             ),
 
         ],
+        'content_uid' => [
+            'label' => 'CC',
+            'config' => [
+                'type' => 'select',
+                'renderType' => 'selectSingle',
+                'foreign_table' => 'tt_content',
+                //'foreign_table_where' => ...,
+                'size' => 1,
+                'minitems' => 0,
+                'maxitems' => 1,
+            ],
+        ],
 
     ],
 ];

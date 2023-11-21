@@ -21,3 +21,54 @@ plugin.tx_teaser2 {
     }
 }
 
+
+tt_content.ws_slider >
+tt_content.ws_slider =< lib.contentElement
+tt_content.ws_slider {
+
+    templateName = Teaser
+
+    templateRootPaths {
+        0 = EXT:fluid_styled_content/Resources/Private/Templates/
+        10 = EXT:teaser2/Resources/Private/Templates/
+        20 = {$plugin.tx_teaser2.view.templateRootPath}
+    }
+    partialRootPaths {
+        0 = EXT:fluid_styled_content/Resources/Private/Partials/
+        10 = EXT:teaser2/Resources/Private/Partials/
+        20 = {$plugin.tx_teaser2.view.partialRootPath}
+    }
+    layoutRootPaths {
+        0 = EXT:fluid_styled_content/Resources/Private/Layouts/
+        10 = EXT:teaser2/Resources/Private/Layouts/
+        20 = {$plugin.tx_teaser2.view.layoutRootPath}
+    }
+
+    settings {
+        teaser < plugin.tx_teaser2.settings
+    }
+
+    dataProcessing {
+
+        20 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+        20 {
+            table = tx_teaser2_domain_model_item
+            as = items
+            pidInList.field = pid
+            where {
+                data = field:uid
+                intval = 1
+                wrap = content_uid=|
+            }
+            orderBy = sorting
+            dataProcessing {
+                20 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+                20 {
+                    references.fieldName = media
+                    as = media
+                }
+            }
+        }
+    }
+
+}
