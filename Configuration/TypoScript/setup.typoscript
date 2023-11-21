@@ -1,14 +1,14 @@
 plugin.tx_teaser2 {
     view {
         templateRootPaths.0 = EXT:teaser2/Resources/Private/Templates/
-        templateRootPaths.1 = {$plugin.tx_teaser2_list.view.templateRootPath}
+        templateRootPaths.1 = {$plugin.tx_teaser2.view.templateRootPath}
         partialRootPaths.0 = EXT:teaser2/Resources/Private/Partials/
-        partialRootPaths.1 = {$plugin.tx_teaser2_list.view.partialRootPath}
+        partialRootPaths.1 = {$plugin.tx_teaser2.view.partialRootPath}
         layoutRootPaths.0 = EXT:teaser2/Resources/Private/Layouts/
-        layoutRootPaths.1 = {$plugin.tx_teaser2_list.view.layoutRootPath}
+        layoutRootPaths.1 = {$plugin.tx_teaser2.view.layoutRootPath}
     }
     persistence {
-        storagePid = {$plugin.tx_teaser2_list.persistence.storagePid}
+        storagePid = {$plugin.tx_teaser2.persistence.storagePid}
         #recursive = 1
     }
     features {
