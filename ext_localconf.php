@@ -7,7 +7,7 @@ defined('TYPO3') || die();
 
 (static function() {
     ExtensionUtility::configurePlugin(
-        'Teaser',
+        'teaser2',
         'List',
         [
             ItemController::class => 'list'
