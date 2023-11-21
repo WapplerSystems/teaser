@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'teaser-plugin-list' => [
+    'teaser2-plugin-list' => [
         'provider' => \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
-        'source' => 'EXT:teaser/Resources/Public/Icons/user_plugin_list.svg'
+        'source' => 'EXT:teaser2/Resources/Public/Icons/user_plugin_list.svg'
     ],
 ];

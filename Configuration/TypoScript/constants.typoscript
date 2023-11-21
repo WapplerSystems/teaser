@@ -1,14 +1,14 @@
-plugin.tx_teaser_list {
+plugin.tx_teaser2 {
     view {
-        # cat=plugin.tx_teaser_list/file; type=string; label=Path to template root (FE)
-        templateRootPath = EXT:teaser/Resources/Private/Templates/
-        # cat=plugin.tx_teaser_list/file; type=string; label=Path to template partials (FE)
-        partialRootPath = EXT:teaser/Resources/Private/Partials/
-        # cat=plugin.tx_teaser_list/file; type=string; label=Path to template layouts (FE)
-        layoutRootPath = EXT:teaser/Resources/Private/Layouts/
+        # cat=plugin.tx_teaser2/file; type=string; label=Path to template root (FE)
+        templateRootPath = EXT:teaser2/Resources/Private/Templates/
+        # cat=plugin.tx_teaser2/file; type=string; label=Path to template partials (FE)
+        partialRootPath = EXT:teaser2/Resources/Private/Partials/
+        # cat=plugin.tx_teaser2/file; type=string; label=Path to template layouts (FE)
+        layoutRootPath = EXT:teaser2/Resources/Private/Layouts/
     }
     persistence {
-        # cat=plugin.tx_teaser_list//a; type=string; label=Default storage PID
+        # cat=plugin.tx_teaser2_list//a; type=string; label=Default storage PID
         storagePid =
     }
 }

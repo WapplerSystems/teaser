@@ -1,7 +1,7 @@
 <?php
 return [
     'ctrl' => [
-        'title' => 'LLL:EXT:teaser/Resources/Private/Language/locallang_db.xlf:tx_teaser_domain_model_item',
+        'title' => 'LLL:EXT:teaser2/Resources/Private/Language/locallang_db.xlf:tx_teaser2_domain_model_item',
         'label' => 'title',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
@@ -17,7 +17,7 @@ return [
             'endtime' => 'endtime',
         ],
         'searchFields' => 'title,subtitle,link',
-        'iconfile' => 'EXT:teaser/Resources/Public/Icons/tx_teaser_domain_model_item.gif'
+        'iconfile' => 'EXT:teaser2/Resources/Public/Icons/tx_teaser2_domain_model_item.gif'
     ],
     'types' => [
         '1' => ['showitem' => 'title, subtitle, link, media, --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language, sys_language_uid, l10n_parent, l10n_diffsource, --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access, hidden, starttime, endtime'],
@@ -40,8 +40,8 @@ return [
                 'items' => [
                     ['', 0],
                 ],
-                'foreign_table' => 'tx_teaser_domain_model_item',
-                'foreign_table_where' => 'AND {#tx_teaser_domain_model_item}.{#pid}=###CURRENT_PID### AND {#tx_teaser_domain_model_item}.{#sys_language_uid} IN (-1,0)',
+                'foreign_table' => 'tx_teaser2_domain_model_item',
+                'foreign_table_where' => 'AND {#tx_teaser2_domain_model_item}.{#pid}=###CURRENT_PID### AND {#tx_teaser2_domain_model_item}.{#sys_language_uid} IN (-1,0)',
             ],
         ],
         'l10n_diffsource' => [
@@ -96,8 +96,8 @@ return [
 
         'title' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:teaser/Resources/Private/Language/locallang_db.xlf:tx_teaser_domain_model_item.title',
-            'description' => 'LLL:EXT:teaser/Resources/Private/Language/locallang_db.xlf:tx_teaser_domain_model_item.title.description',
+            'label' => 'LLL:EXT:teaser2/Resources/Private/Language/locallang_db.xlf:tx_teaser2_domain_model_item.title',
+            'description' => 'LLL:EXT:teaser2/Resources/Private/Language/locallang_db.xlf:tx_teaser2_domain_model_item.title.description',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
@@ -107,8 +107,8 @@ return [
         ],
         'subtitle' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:teaser/Resources/Private/Language/locallang_db.xlf:tx_teaser_domain_model_item.subtitle',
-            'description' => 'LLL:EXT:teaser/Resources/Private/Language/locallang_db.xlf:tx_teaser_domain_model_item.subtitle.description',
+            'label' => 'LLL:EXT:teaser2/Resources/Private/Language/locallang_db.xlf:tx_teaser2_domain_model_item.subtitle',
+            'description' => 'LLL:EXT:teaser2/Resources/Private/Language/locallang_db.xlf:tx_teaser2_domain_model_item.subtitle.description',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
@@ -118,8 +118,8 @@ return [
         ],
         'link' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:teaser/Resources/Private/Language/locallang_db.xlf:tx_teaser_domain_model_item.link',
-            'description' => 'LLL:EXT:teaser/Resources/Private/Language/locallang_db.xlf:tx_teaser_domain_model_item.link.description',
+            'label' => 'LLL:EXT:teaser2/Resources/Private/Language/locallang_db.xlf:tx_teaser2_domain_model_item.link',
+            'description' => 'LLL:EXT:teaser2/Resources/Private/Language/locallang_db.xlf:tx_teaser2_domain_model_item.link.description',
             'config' => [
                 'type' => 'input',
                 'renderType' => 'inputLink',
@@ -127,8 +127,8 @@ return [
         ],
         'media' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:teaser/Resources/Private/Language/locallang_db.xlf:tx_teaser_domain_model_item.media',
-            'description' => 'LLL:EXT:teaser/Resources/Private/Language/locallang_db.xlf:tx_teaser_domain_model_item.media.description',
+            'label' => 'LLL:EXT:teaser2/Resources/Private/Language/locallang_db.xlf:tx_teaser2_domain_model_item.media',
+            'description' => 'LLL:EXT:teaser2/Resources/Private/Language/locallang_db.xlf:tx_teaser2_domain_model_item.media.description',
             'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig(
                 'media',
                 [
@@ -171,14 +171,14 @@ return [
                     ],
                     'foreign_match_fields' => [
                         'fieldname' => 'media',
-                        'tablenames' => 'tx_teaser_domain_model_item',
+                        'tablenames' => 'tx_teaser2_domain_model_item',
                         'table_local' => 'sys_file',
                     ],
                     'maxitems' => 1
                 ]
             ),
-            
+
         ],
-    
+
     ],
 ];

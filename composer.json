@@ -25,9 +25,6 @@
             "WapplerSystems\\Teaser\\Tests\\": "Tests"
         }
     },
-    "replace": {
-        "typo3-ter/teaser": "self.version"
-    },
     "config": {
         "vendor-dir": ".Build/vendor",
         "bin-dir": ".Build/bin"
@@ -39,8 +36,7 @@
     },
     "extra": {
         "typo3/cms": {
-            "web-dir": ".Build/Web",
-            "extension-key": "teaser"
+            "extension-key": "teaser2"
         }
     }
 }
