@@ -3,34 +3,34 @@
 	<file source-language="en" datatype="plaintext" original="EXT:teaser/Resources/Private/Language/locallang_db.xlf" date="2023-11-21T12:52:28Z" product-name="teaser">
 		<header/>
 		<body>
-			<trans-unit id="tx_teaser_domain_model_item" resname="tx_teaser_domain_model_item">
+			<trans-unit id="tx_teaser2_domain_model_item" resname="tx_teaser2_domain_model_item">
 				<source>Item</source>
 			</trans-unit>
-			<trans-unit id="tx_teaser_domain_model_item.description" resname="tx_teaser_domain_model_item.description">
+			<trans-unit id="tx_teaser2_domain_model_item.description" resname="tx_teaser2_domain_model_item.description">
 				<source>Item</source>
 			</trans-unit>
-			<trans-unit id="tx_teaser_domain_model_item.title" resname="tx_teaser_domain_model_item.title">
+			<trans-unit id="tx_teaser2_domain_model_item.title" resname="tx_teaser2_domain_model_item.title">
 				<source>Title</source>
 			</trans-unit>
-			<trans-unit id="tx_teaser_domain_model_item.title.description" resname="tx_teaser_domain_model_item.title.description">
+			<trans-unit id="tx_teaser2_domain_model_item.title.description" resname="tx_teaser2_domain_model_item.title.description">
 				<source>Title</source>
 			</trans-unit>
-			<trans-unit id="tx_teaser_domain_model_item.subtitle" resname="tx_teaser_domain_model_item.subtitle">
+			<trans-unit id="tx_teaser2_domain_model_item.subtitle" resname="tx_teaser2_domain_model_item.subtitle">
 				<source>Subtitle</source>
 			</trans-unit>
-			<trans-unit id="tx_teaser_domain_model_item.subtitle.description" resname="tx_teaser_domain_model_item.subtitle.description">
+			<trans-unit id="tx_teaser2_domain_model_item.subtitle.description" resname="tx_teaser2_domain_model_item.subtitle.description">
 				<source>Subtitle</source>
 			</trans-unit>
-			<trans-unit id="tx_teaser_domain_model_item.link" resname="tx_teaser_domain_model_item.link">
+			<trans-unit id="tx_teaser2_domain_model_item.link" resname="tx_teaser2_domain_model_item.link">
 				<source>Link</source>
 			</trans-unit>
-			<trans-unit id="tx_teaser_domain_model_item.link.description" resname="tx_teaser_domain_model_item.link.description">
+			<trans-unit id="tx_teaser2_domain_model_item.link.description" resname="tx_teaser2_domain_model_item.link.description">
 				<source>Link</source>
 			</trans-unit>
-			<trans-unit id="tx_teaser_domain_model_item.media" resname="tx_teaser_domain_model_item.media">
+			<trans-unit id="tx_teaser2_domain_model_item.media" resname="tx_teaser2_domain_model_item.media">
 				<source>Media</source>
 			</trans-unit>
-			<trans-unit id="tx_teaser_domain_model_item.media.description" resname="tx_teaser_domain_model_item.media.description">
+			<trans-unit id="tx_teaser2_domain_model_item.media.description" resname="tx_teaser2_domain_model_item.media.description">
 				<source>Media</source>
 			</trans-unit>
 			<trans-unit id="tx_teaser_list.name" resname="tx_teaser_list.name">
@@ -38,6 +38,9 @@
 			</trans-unit>
 			<trans-unit id="tx_teaser_list.description" resname="tx_teaser_list.description">
 				<source></source>
+			</trans-unit>
+			<trans-unit id="tt_content.layout">
+				<source>Layout</source>
 			</trans-unit>
 		</body>
 	</file>

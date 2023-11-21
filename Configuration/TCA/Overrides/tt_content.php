@@ -10,7 +10,7 @@ defined('TYPO3') || die();
 $additionalColumns = [
     'tx_teaser2_layout' => [
         'exclude' => true,
-        'label' => 'LLL:EXT:ws_t3bootstrap/Resources/Private/Language/Backend.xlf:animate-on-scroll.easing',
+        'label' => 'LLL:EXT:teaser2/Resources/Private/Language/locallang_db.xlf:tt_content.layout',
         'config' => [
             'type' => 'select',
             'renderType' => 'selectSingle',
