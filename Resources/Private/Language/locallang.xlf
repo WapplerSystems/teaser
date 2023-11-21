@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:teaser/Resources/Private/Language/locallang.xlf" date="2023-11-21T12:52:28Z" product-name="teaser">
+		<header/>
+		<body>
+			<trans-unit id="tx_teaser_domain_model_item" resname="tx_teaser_domain_model_item">
+				<source>Item</source>
+			</trans-unit>
+			<trans-unit id="tx_teaser_domain_model_item.description" resname="tx_teaser_domain_model_item.description">
+				<source>Item</source>
+			</trans-unit>
+			<trans-unit id="tx_teaser_domain_model_item.title" resname="tx_teaser_domain_model_item.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_teaser_domain_model_item.title.description" resname="tx_teaser_domain_model_item.title.description">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_teaser_domain_model_item.subtitle" resname="tx_teaser_domain_model_item.subtitle">
+				<source>Subtitle</source>
+			</trans-unit>
+			<trans-unit id="tx_teaser_domain_model_item.subtitle.description" resname="tx_teaser_domain_model_item.subtitle.description">
+				<source>Subtitle</source>
+			</trans-unit>
+			<trans-unit id="tx_teaser_domain_model_item.link" resname="tx_teaser_domain_model_item.link">
+				<source>Link</source>
+			</trans-unit>
+			<trans-unit id="tx_teaser_domain_model_item.link.description" resname="tx_teaser_domain_model_item.link.description">
+				<source>Link</source>
+			</trans-unit>
+			<trans-unit id="tx_teaser_domain_model_item.media" resname="tx_teaser_domain_model_item.media">
+				<source>Media</source>
+			</trans-unit>
+			<trans-unit id="tx_teaser_domain_model_item.media.description" resname="tx_teaser_domain_model_item.media.description">
+				<source>Media</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:teaser/Resources/Private/Language/locallang_csh_tx_teaser_domain_model_item.xlf" date="2023-11-21T12:52:28Z" product-name="teaser">
+		<header/>
+		<body>
+			<trans-unit id="title.description" resname="title.description">
+				<source>title</source>
+			</trans-unit>
+			<trans-unit id="subtitle.description" resname="subtitle.description">
+				<source>subtitle</source>
+			</trans-unit>
+			<trans-unit id="link.description" resname="link.description">
+				<source>link</source>
+			</trans-unit>
+			<trans-unit id="media.description" resname="media.description">
+				<source>media</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
