@@ -10,10 +10,15 @@
     .teaser2--grid1 {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        grid-template-areas:
-            "teaser2__item--n1 teaser2__item--n2 teaser2__item--n3 teaser2__item--n4"
-            "teaser2__item--n1 teaser2__item--n2 teaser2__item--n5 teaser2__item--n6";
+        grid-template-areas: "el1 el2 el3 el4" "el1 el2 el5 el6";
     }
+
+    .teaser2__item--n1 { grid-area: el1; }
+    .teaser2__item--n2 { grid-area: el2; }
+    .teaser2__item--n3 { grid-area: el3; }
+    .teaser2__item--n4 { grid-area: el4; }
+    .teaser2__item--n5 { grid-area: el5; }
+    .teaser2__item--n6 { grid-area: el6; }
 }
 
 /* default */
@@ -100,4 +105,4 @@
     background-color: rgba(0, 0, 0, 0.25);
 }
 
-}
+
