@@ -1,0 +1,103 @@
+/* grid 1 */
+
+
+.teaser2--grid1 {
+    display: grid;
+    gap: 0 0;
+}
+
+@media (min-width: 992px) {
+    .teaser2--grid1 {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "teaser2__item--n1 teaser2__item--n2 teaser2__item--n3 teaser2__item--n4"
+            "teaser2__item--n1 teaser2__item--n2 teaser2__item--n5 teaser2__item--n6";
+    }
+}
+
+/* default */
+
+.teaser2 {
+    min-height: 800px;
+}
+
+.teaser2__item {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    color: #fff;
+}
+
+.teaser2__item a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.teaser2__item__shade {
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    transition: background-color 0.35s ease;
+}
+
+.teaser2__item__text {
+    z-index: 20;
+    position: relative;
+}
+
+.teaser2__item__media {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.teaser2__item__media video, .teaser2__item__media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.teaser2__item__title-wrapper {
+    width: 100%;
+    color: #fff;
+    padding: 1rem;
+}
+
+.teaser2__item__title {
+    font-size: calc(1.325rem + 0.9vw);
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-bottom: 0;
+    font-weight: 700;
+}
+
+.teaser2__item__link {
+    opacity: 0;
+    max-height: 0;
+    transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+    overflow: hidden;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+}
+
+.teaser2__item--active .teaser2__item__link, .teaser2__item:hover .teaser2__item__link, .teaser2__item:active .teaser2__item__link {
+    max-height: 60px;
+    opacity: 1;
+    transition: max-height 0.5s ease-in, opacity 0.5s ease-in;
+}
+
+.teaser2__item--active .teaser2__item__shade {
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+}

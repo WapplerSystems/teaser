@@ -3,6 +3,9 @@
 	<file source-language="en" datatype="plaintext" original="EXT:teaser/Resources/Private/Language/locallang.xlf" date="2023-11-21T12:52:28Z" product-name="teaser">
 		<header/>
 		<body>
+			<trans-unit id="title">
+				<source>Teaser</source>
+			</trans-unit>
 			<trans-unit id="tx_teaser2_domain_model_item" resname="tx_teaser2_domain_model_item">
 				<source>Item</source>
 			</trans-unit>

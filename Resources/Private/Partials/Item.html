@@ -1,0 +1,38 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true" lang="en">
+
+
+<div id="teaser2__item-{item.data.uid}" class="teaser2__item teaser2__item--n{iteration.cycle}">
+
+    <div class="teaser2__item__shade"></div>
+    <f:link.typolink parameter="{item.data.link}">
+        <div class="teaser2__item__text">
+            <div class="teaser2__item__title-wrapper">
+                <p class="teaser2__item__subtitle">{item.data.subtitle}</p>
+                <p class="teaser2__item__title">{item.data.title}</p>
+            </div>
+            <div class="teaser2__item__link">
+                <span>Mehr erfahren</span>
+            </div>
+        </div>
+    </f:link.typolink>
+
+    <div class="teaser2__item__media">
+        <f:if condition="{item.media.0}">
+            <f:alias map="{media:item.media.0}">
+                <f:switch expression="{media.type}">
+                    <f:case value="2">
+                        <f:image image="{media}" alt="{item.title}" title="{item.title}" maxWidth="400" />
+                    </f:case>
+                    <f:case value="4">
+                        <f:media file="{media}" alt="{item.title}" title="{item.title}" additionalAttributes="{autoplay:'autoplay',controls:false,muted:'muted'}" />
+                    </f:case>
+                </f:switch>
+            </f:alias>
+        </f:if>
+    </div>
+
+
+</div>
+
+
+</html>

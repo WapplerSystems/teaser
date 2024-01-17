@@ -8,8 +8,6 @@ plugin.tx_teaser2 {
         layoutRootPaths.1 = {$plugin.tx_teaser2.view.layoutRootPath}
     }
     persistence {
-        storagePid = {$plugin.tx_teaser2.persistence.storagePid}
-        #recursive = 1
     }
     features {
         #skipDefaultArguments = 1
@@ -22,11 +20,11 @@ plugin.tx_teaser2 {
 }
 
 
-tt_content.ws_slider >
-tt_content.ws_slider =< lib.contentElement
-tt_content.ws_slider {
+tt_content.teaser2 >
+tt_content.teaser2 =< lib.contentElement
+tt_content.teaser2 {
 
-    templateName = Teaser
+    templateName = Teaser2
 
     templateRootPaths {
         0 = EXT:fluid_styled_content/Resources/Private/Templates/

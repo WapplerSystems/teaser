@@ -1,0 +1,16 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+
+<f:section name="content">
+
+    <f:asset.script identifier="teaser2" src="EXT:teaser2/Resources/Public/JavaScript/animation.js" />
+    <f:asset.css identifier="teaser2" href="EXT:teaser2/Resources/Public/CSS/styles.css" />
+
+<div class="teaser2 teaser2--{data.tx_teaser2_layout}">
+    <f:for as="item" each="{items}" iteration="iteration">
+        <f:render partial="Item" arguments="{item:item, iteration:iteration}" />
+    </f:for>
+</div>
+
+</f:section>
+</html>
