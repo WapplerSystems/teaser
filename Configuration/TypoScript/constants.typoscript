@@ -7,8 +7,6 @@ plugin.tx_teaser2 {
         # cat=plugin.tx_teaser2/file; type=string; label=Path to template layouts (FE)
         layoutRootPath = EXT:teaser2/Resources/Private/Layouts/
     }
-    persistence {
-        # cat=plugin.tx_teaser2_list//a; type=string; label=Default storage PID
-        storagePid =
-    }
+
+
 }

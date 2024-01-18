@@ -1,0 +1,23 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:t2="http://typo3.org/ns/WapplerSystems/Teaser/ViewHelpers" data-namespace-typo3-fluid="true" lang="en">
+
+<f:switch expression="{imgTag}">
+    <f:case value="scaled">
+        <f:image alt="{alt}" title="{title}" image="{image}" class="{class}" />
+    </f:case>
+    <f:case value="img">
+
+        <img src="{f:uri.image(image:image)}" alt="{alt}" title="{title}" />
+
+    </f:case>
+    <f:defaultCase>
+
+        <picture>
+            <f:for each="{sources}" as="source">
+                <t2:source image="{image}" media="{source.media}" cropVariant="{source.cropVariant}" maxWidth="{source.maxWidth}"/>
+            </f:for>
+            <f:image image="{image}" maxWidth="800" alt="{alt}" title="{title}" />
+        </picture>
+
+    </f:defaultCase>
+</f:switch>
+</html>

@@ -137,6 +137,41 @@ return [
                         'createNewRelationLinkTitle' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:media.addFileReference'
                     ],
                     'overrideChildTca' => [
+                        'columns' => [
+                            'crop' => [
+                                'config' => [
+                                    'cropVariants' => [
+                                        'square' => [
+                                            'title' => 'LLL:EXT:teaser2/Resources/Private/Language/locallang_db.xlf:image_crop_square',
+                                            'allowedAspectRatios' => [
+                                                'NaN' => [
+                                                    'title' => 'LLL:EXT:teaser2/Resources/Private/Language/locallang_db.xlf:image_crop_1_1',
+                                                    'value' => 1.0
+                                                ]
+                                            ],
+                                        ],
+                                        'vertical1' => [
+                                            'title' => 'LLL:EXT:teaser2/Resources/Private/Language/locallang_db.xlf:image_crop_vertical1',
+                                            'allowedAspectRatios' => [
+                                                'NaN' => [
+                                                    'title' => 'LLL:EXT:teaser2/Resources/Private/Language/locallang_db.xlf:image_crop_1_2',
+                                                    'value' => 0.5
+                                                ]
+                                            ],
+                                        ],
+                                        'horizontal1' => [
+                                            'title' => 'LLL:EXT:teaser2/Resources/Private/Language/locallang_db.xlf:image_crop_horizontal1',
+                                            'allowedAspectRatios' => [
+                                                'NaN' => [
+                                                    'title' => 'LLL:EXT:teaser2/Resources/Private/Language/locallang_db.xlf:image_crop_2_1',
+                                                    'value' => 2.0
+                                                ]
+                                            ],
+                                        ],
+                                    ],
+                                ],
+                            ],
+                        ],
                         'types' => [
                             '0' => [
                                 'showitem' => '

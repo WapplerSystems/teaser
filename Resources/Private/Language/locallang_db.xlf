@@ -42,6 +42,24 @@
 			<trans-unit id="tt_content.layout">
 				<source>Layout</source>
 			</trans-unit>
+			<trans-unit id="image_crop_square">
+				<source>Square</source>
+			</trans-unit>
+			<trans-unit id="image_crop_1_1">
+				<source>1:1</source>
+			</trans-unit>
+			<trans-unit id="image_crop_vertical1">
+				<source>Vertical</source>
+			</trans-unit>
+			<trans-unit id="image_crop_1_2">
+				<source>1:2</source>
+			</trans-unit>
+			<trans-unit id="image_crop_horizontal1">
+				<source>Horizontal</source>
+			</trans-unit>
+			<trans-unit id="image_crop_2_1">
+				<source>2:1</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

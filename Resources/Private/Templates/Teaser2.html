@@ -8,7 +8,7 @@
 
 <div class="teaser2 teaser2--{data.tx_teaser2_layout}">
     <f:for as="item" each="{items}" iteration="iteration">
-        <f:render partial="Item" arguments="{item:item, iteration:iteration}" />
+        <f:render partial="Item" arguments="{item:item, iteration:iteration, imageSettings:'{settings.layouts.{data.tx_teaser2_layout}.elements.{iteration.cycle}}'}" />
     </f:for>
 </div>
 
