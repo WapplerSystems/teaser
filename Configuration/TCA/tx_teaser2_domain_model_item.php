@@ -18,7 +18,8 @@ return [
             'endtime' => 'endtime',
         ],
         'searchFields' => 'title,subtitle,link',
-        'iconfile' => 'EXT:teaser2/Resources/Public/Icons/tx_teaser2_domain_model_item.gif'
+        'iconfile' => 'EXT:teaser2/Resources/Public/Icons/tx_teaser2_domain_model_item.gif',
+        'hideTable' => true,
     ],
     'types' => [
         '1' => ['showitem' => 'title, subtitle, link, media, --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language, sys_language_uid, l10n_parent, l10n_diffsource, --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access, hidden, starttime, endtime'],
@@ -130,89 +131,84 @@ return [
             'exclude' => true,
             'label' => 'LLL:EXT:teaser2/Resources/Private/Language/locallang_db.xlf:tx_teaser2_domain_model_item.media',
             'description' => 'LLL:EXT:teaser2/Resources/Private/Language/locallang_db.xlf:tx_teaser2_domain_model_item.media.description',
-            'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig(
-                'media',
-                [
-                    'appearance' => [
-                        'createNewRelationLinkTitle' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:media.addFileReference'
-                    ],
-                    'overrideChildTca' => [
-                        'columns' => [
-                            'crop' => [
-                                'config' => [
-                                    'cropVariants' => [
-                                        'square' => [
-                                            'title' => 'LLL:EXT:teaser2/Resources/Private/Language/locallang_db.xlf:image_crop_square',
-                                            'allowedAspectRatios' => [
-                                                'NaN' => [
-                                                    'title' => 'LLL:EXT:teaser2/Resources/Private/Language/locallang_db.xlf:image_crop_1_1',
-                                                    'value' => 1.0
-                                                ]
-                                            ],
+
+            'config' => [
+                'type' => 'file',
+                'maxitems' => 1,
+                'allowed' => ['jpg','png','svg','gif','jpeg','mp4','webm','webp'],
+                'appearance' => [
+                    'createNewRelationLinkTitle' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:media.addFileReference'
+                ],
+                'overrideChildTca' => [
+                    'columns' => [
+                        'crop' => [
+                            'config' => [
+                                'cropVariants' => [
+                                    'square' => [
+                                        'title' => 'LLL:EXT:teaser2/Resources/Private/Language/locallang_db.xlf:image_crop_square',
+                                        'allowedAspectRatios' => [
+                                            'NaN' => [
+                                                'title' => 'LLL:EXT:teaser2/Resources/Private/Language/locallang_db.xlf:image_crop_1_1',
+                                                'value' => 1.0
+                                            ]
                                         ],
-                                        'vertical1' => [
-                                            'title' => 'LLL:EXT:teaser2/Resources/Private/Language/locallang_db.xlf:image_crop_vertical1',
-                                            'allowedAspectRatios' => [
-                                                'NaN' => [
-                                                    'title' => 'LLL:EXT:teaser2/Resources/Private/Language/locallang_db.xlf:image_crop_1_2',
-                                                    'value' => 0.5
-                                                ]
-                                            ],
+                                    ],
+                                    'vertical1' => [
+                                        'title' => 'LLL:EXT:teaser2/Resources/Private/Language/locallang_db.xlf:image_crop_vertical1',
+                                        'allowedAspectRatios' => [
+                                            'NaN' => [
+                                                'title' => 'LLL:EXT:teaser2/Resources/Private/Language/locallang_db.xlf:image_crop_1_2',
+                                                'value' => 0.5
+                                            ]
                                         ],
-                                        'horizontal1' => [
-                                            'title' => 'LLL:EXT:teaser2/Resources/Private/Language/locallang_db.xlf:image_crop_horizontal1',
-                                            'allowedAspectRatios' => [
-                                                'NaN' => [
-                                                    'title' => 'LLL:EXT:teaser2/Resources/Private/Language/locallang_db.xlf:image_crop_2_1',
-                                                    'value' => 2.0
-                                                ]
-                                            ],
+                                    ],
+                                    'horizontal1' => [
+                                        'title' => 'LLL:EXT:teaser2/Resources/Private/Language/locallang_db.xlf:image_crop_horizontal1',
+                                        'allowedAspectRatios' => [
+                                            'NaN' => [
+                                                'title' => 'LLL:EXT:teaser2/Resources/Private/Language/locallang_db.xlf:image_crop_2_1',
+                                                'value' => 2.0
+                                            ]
                                         ],
                                     ],
                                 ],
                             ],
                         ],
-                        'types' => [
-                            '0' => [
-                                'showitem' => '
+                    ],
+                    'types' => [
+                        '0' => [
+                            'showitem' => '
                                 --palette--;LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;imageoverlayPalette,
                                 --palette--;;filePalette'
-                            ],
-                            \TYPO3\CMS\Core\Resource\File::FILETYPE_TEXT => [
-                                'showitem' => '
+                        ],
+                        \TYPO3\CMS\Core\Resource\File::FILETYPE_TEXT => [
+                            'showitem' => '
                                 --palette--;LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;imageoverlayPalette,
                                 --palette--;;filePalette'
-                            ],
-                            \TYPO3\CMS\Core\Resource\File::FILETYPE_IMAGE => [
-                                'showitem' => '
+                        ],
+                        \TYPO3\CMS\Core\Resource\File::FILETYPE_IMAGE => [
+                            'showitem' => '
                                 --palette--;;imageoverlayPalette,
                                 --palette--;;filePalette',
-                            ],
-                            \TYPO3\CMS\Core\Resource\File::FILETYPE_AUDIO => [
-                                'showitem' => '
-                                --palette--;LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;imageoverlayPalette,
-                                --palette--;;filePalette'
-                            ],
-                            \TYPO3\CMS\Core\Resource\File::FILETYPE_VIDEO => [
-                                'showitem' => '
-                                --palette--;LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;imageoverlayPalette,
-                                --palette--;;filePalette'
-                            ],
-                            \TYPO3\CMS\Core\Resource\File::FILETYPE_APPLICATION => [
-                                'showitem' => '
-                                --palette--;LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;imageoverlayPalette,
-                                --palette--;;filePalette'
-                            ]
                         ],
+                        \TYPO3\CMS\Core\Resource\File::FILETYPE_AUDIO => [
+                            'showitem' => '
+                                --palette--;LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;imageoverlayPalette,
+                                --palette--;;filePalette'
+                        ],
+                        \TYPO3\CMS\Core\Resource\File::FILETYPE_VIDEO => [
+                            'showitem' => '
+                                --palette--;LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;imageoverlayPalette,
+                                --palette--;;filePalette'
+                        ],
+                        \TYPO3\CMS\Core\Resource\File::FILETYPE_APPLICATION => [
+                            'showitem' => '
+                                --palette--;LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;imageoverlayPalette,
+                                --palette--;;filePalette'
+                        ]
                     ],
-                    'foreign_match_fields' => [
-                        'fieldname' => 'media',
-                        'tablenames' => 'tx_teaser2_domain_model_item',
-                        'table_local' => 'sys_file',
-                    ],
-                    'maxitems' => 1
-                ]
-            ),
+                ],
+            ],
 
         ],
         'content_uid' => [

@@ -33,11 +33,11 @@
 			<trans-unit id="tx_teaser2_domain_model_item.media.description" resname="tx_teaser2_domain_model_item.media.description">
 				<source>Media</source>
 			</trans-unit>
-			<trans-unit id="tx_teaser_list.name" resname="tx_teaser_list.name">
-				<source>Teasers</source>
+			<trans-unit id="plugin.name" resname="tx_teaser_list.name">
+				<source>Teaser</source>
 			</trans-unit>
-			<trans-unit id="tx_teaser_list.description" resname="tx_teaser_list.description">
-				<source></source>
+			<trans-unit id="plugin.description" resname="tx_teaser_list.description">
+				<source>A teaser element with images and videos</source>
 			</trans-unit>
 			<trans-unit id="tt_content.layout">
 				<source>Layout</source>

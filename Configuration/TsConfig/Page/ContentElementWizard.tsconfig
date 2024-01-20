@@ -1,0 +1,14 @@
+mod.wizards.newContentElement.wizardItems.common {
+    elements {
+        teaser2 {
+            iconIdentifier = content-teaser2
+            title = LLL:EXT:teaser2/Resources/Private/Language/locallang_db.xlf:plugin.name
+            description = LLL:EXT:teaser2/Resources/Private/Language/locallang_db.xlf:plugin.description
+            tt_content_defValues {
+                CType = teaser2
+            }
+        }
+    }
+    show := addToList(teaser2)
+}
+
