@@ -1,13 +1,10 @@
 # Teaser TYPO3 Extension
 
-
-## Universal slider / carousel extension
-
 ## Demo
 
-<video width="100%" height="440" controls>
-  <source src="Documentation/Videos/demo.mp4" type="video/mp4">
-</video>
+https://github.com/WapplerSystems/teaser/raw/release/v12/Documentation/Videos/demo.mp4
+
+
 
 ## Highlight
 
