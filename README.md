@@ -2,8 +2,7 @@
 
 ## Demo
 
-![](https://github.com/WapplerSystems/teaser/raw/release/v12/Documentation/Videos/demo.mp4)
-
+![image](https://github.com/WapplerSystems/teaser/blob/release/v12/Documentation/Images/demo.gif?raw=true)
 
 
 ## Highlight
