@@ -2,7 +2,7 @@
 
 ## Demo
 
-https://github.com/WapplerSystems/teaser/raw/release/v12/Documentation/Videos/demo.mp4
+![](https://github.com/WapplerSystems/teaser/raw/release/v12/Documentation/Videos/demo.mp4)
 
 
 
