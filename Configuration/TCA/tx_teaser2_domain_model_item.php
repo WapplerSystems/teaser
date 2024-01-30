@@ -21,7 +21,7 @@ return [
         'iconfile' => 'EXT:teaser2/Resources/Public/Icons/tx_teaser2_domain_model_item.gif'
     ],
     'types' => [
-        '1' => ['showitem' => 'title, subtitle, link, media, --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language, sys_language_uid, l10n_parent, l10n_diffsource, --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access, hidden, starttime, endtime'],
+        '1' => ['showitem' => 'title, subtitle, link, media, brightness, layout, --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language, sys_language_uid, l10n_parent, l10n_diffsource, --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access, hidden, starttime, endtime'],
     ],
     'columns' => [
         'sys_language_uid' => [
@@ -225,6 +225,36 @@ return [
                 'size' => 1,
                 'minitems' => 0,
                 'maxitems' => 1,
+            ],
+        ],
+        'brightness' => [
+            'label' => 'LLL:EXT:teaser2/Resources/Private/Language/locallang_db.xlf:tx_teaser2_domain_model_item.brightness',
+            'config' => [
+                'type' => 'input',
+                'range' => [
+                    'lower' => 0,
+                    'upper' => 200
+                ],
+                'slider' => [
+                    'step' => 1
+                ]
+            ],
+        ],
+        'layout' => [
+            'label' => 'LLL:EXT:teaser2/Resources/Private/Language/locallang_db.xlf:tx_teaser2_domain_model_item.layout',
+            'config' => [
+                'type' => 'select',
+                'renderType' => 'selectSingle',
+                'items' => [
+                    [
+                        'LLL:EXT:teaser2/Resources/Private/Language/locallang_db.xlf:tx_teaser2_domain_model_item.layout.options.bright_font',
+                        'bright',
+                    ],
+                    [
+                        'LLL:EXT:teaser2/Resources/Private/Language/locallang_db.xlf:tx_teaser2_domain_model_item.layout.options.dark_font',
+                        'dark',
+                    ],
+                ],
             ],
         ],
 

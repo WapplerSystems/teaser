@@ -1,6 +1,14 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:t2="http://typo3.org/ns/WapplerSystems/Teaser/ViewHelpers" data-namespace-typo3-fluid="true" lang="en">
 
-<div id="teaser2__item-{item.data.uid}" class="teaser2__item teaser2__item--n{iteration.cycle}">
+
+<div id="teaser2__item-{item.data.uid}" class="teaser2__item teaser2__item--n{iteration.cycle} teaser2__item--{item.data.layout}">
+
+    <f:asset.css identifier="teaser2__item-css-{item.data.uid}" >
+        #teaser2__item-{item.data.uid} .teaser2__item__media  {
+        filter: brightness({item.data.brightness}%);
+        }
+    </f:asset.css>
+
 
     <f:link.typolink parameter="{item.data.link}">
         <div class="teaser2__item__shade"></div>
@@ -32,7 +40,7 @@
 
                     </f:case>
                     <f:case value="4">
-                        <f:media file="{mediaElement}" alt="{item.title}" title="{item.title}" additionalAttributes="{autoplay:'autoplay',controls:false,muted:'muted',loop:'loop'}" />
+                        <f:media file="{mediaElement}" alt="{item.title}" title="{item.title}" additionalConfig="{autoplay:'autoplay',controls:false,muted:'muted',loop:'loop'}" />
                     </f:case>
                 </f:switch>
             </f:alias>

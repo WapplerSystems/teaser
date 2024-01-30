@@ -33,6 +33,18 @@
 			<trans-unit id="tx_teaser2_domain_model_item.media.description" resname="tx_teaser2_domain_model_item.media.description">
 				<source>Media</source>
 			</trans-unit>
+			<trans-unit id="tx_teaser2_domain_model_item.layout">
+				<source>Layout</source>
+			</trans-unit>
+			<trans-unit id="tx_teaser2_domain_model_item.layout.options.bright_font">
+				<source>Bright font</source>
+			</trans-unit>
+			<trans-unit id="tx_teaser2_domain_model_item.layout.options.dark_font">
+				<source>Dark font</source>
+			</trans-unit>
+			<trans-unit id="tx_teaser2_domain_model_item.brightness">
+				<source>Brightness</source>
+			</trans-unit>
 			<trans-unit id="tx_teaser_list.name" resname="tx_teaser_list.name">
 				<source>Teasers</source>
 			</trans-unit>
