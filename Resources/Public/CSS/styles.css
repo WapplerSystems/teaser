@@ -14,8 +14,7 @@
 }
 
 .teaser2__item a {
-    color: #fff;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 .teaser2__item a:hover {
@@ -165,9 +164,17 @@
 /* layouts */
 
 .teaser2__item--bright a {
-    color: #fff;
+    color: #fff !important;
+}
+
+.teaser2__item--bright a:hover {
+    color: #fff !important;
 }
 
 .teaser2__item--dark a {
-    color: #000;
+    color: #000 !important;
+}
+
+.teaser2__item--dark a:hover {
+    color: #000 !important;
 }
