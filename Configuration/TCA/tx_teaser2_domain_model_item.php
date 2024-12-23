@@ -20,6 +20,9 @@ return [
         'searchFields' => 'title,subtitle,link',
         'iconfile' => 'EXT:teaser2/Resources/Public/Icons/tx_teaser2_domain_model_item.gif',
         'hideTable' => true,
+        'security' => [
+            'ignorePageTypeRestriction' => true,
+        ],
     ],
     'types' => [
         '1' => ['showitem' => 'title, subtitle, link, media, --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language, sys_language_uid, l10n_parent, l10n_diffsource, --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access, hidden, starttime, endtime'],
