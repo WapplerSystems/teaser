@@ -2,7 +2,7 @@
 
 $EM_CONF['teaser2'] = [
     'title' => 'Teaser',
-    'description' => 'This extension displays images and videos in a responsive grid layout.',
+    'description' => 'This extension displays images and videos in a responsive grid layout with nice hover effect.',
     'category' => 'plugin',
     'author' => 'Sven Wappler',
     'author_email' => 'typo3@wappler.systems',
