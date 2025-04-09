@@ -28,6 +28,8 @@ composer require wapplersystems/teaser
 
 Download and install the [extension][3] with the extension manager module.
 
+Add the site set to your site.
+
 ## Authors
 
 * [Sven](https://github.com/svewap)
