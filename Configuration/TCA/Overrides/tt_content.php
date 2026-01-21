@@ -75,7 +75,7 @@ $additionalColumns = [
             'overrideChildTca' => [
                 'types' => [
                     '1' => [
-                        'showitem' => 'title, subtitle, sys_language_uid, media, text_position, link, --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access,starttime, endtime'
+                        'showitem' => 'title, subtitle, media, text_position, link, layout, brightness, --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access,starttime, endtime'
                     ],
                 ]
             ]

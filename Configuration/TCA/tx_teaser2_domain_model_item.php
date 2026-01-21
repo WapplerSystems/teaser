@@ -1,4 +1,7 @@
 <?php
+
+use TYPO3\CMS\Core\Resource\FileType;
+
 return [
     'ctrl' => [
         'title' => 'LLL:EXT:teaser2/Resources/Private/Language/locallang_db.xlf:tx_teaser2_domain_model_item',
@@ -25,7 +28,7 @@ return [
         ],
     ],
     'types' => [
-        '1' => ['showitem' => 'title, subtitle, link, media, --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language, sys_language_uid, l10n_parent, l10n_diffsource, --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access, hidden, starttime, endtime'],
+        '1' => ['showitem' => 'title, subtitle, link, media, brightness, layout, --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language, sys_language_uid, l10n_parent, l10n_diffsource, --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access, hidden, starttime, endtime'],
     ],
     'columns' => [
         'sys_language_uid' => [
@@ -184,27 +187,27 @@ return [
                                 --palette--;LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;imageoverlayPalette,
                                 --palette--;;filePalette'
                         ],
-                        \TYPO3\CMS\Core\Resource\File::FILETYPE_TEXT => [
+                        FileType::TEXT->value => [
                             'showitem' => '
                                 --palette--;LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;imageoverlayPalette,
                                 --palette--;;filePalette'
                         ],
-                        \TYPO3\CMS\Core\Resource\File::FILETYPE_IMAGE => [
+                        FileType::IMAGE->value => [
                             'showitem' => '
                                 --palette--;;imageoverlayPalette,
                                 --palette--;;filePalette',
                         ],
-                        \TYPO3\CMS\Core\Resource\File::FILETYPE_AUDIO => [
+                        FileType::AUDIO->value => [
                             'showitem' => '
                                 --palette--;LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;imageoverlayPalette,
                                 --palette--;;filePalette'
                         ],
-                        \TYPO3\CMS\Core\Resource\File::FILETYPE_VIDEO => [
+                        FileType::VIDEO->value => [
                             'showitem' => '
                                 --palette--;LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;imageoverlayPalette,
                                 --palette--;;filePalette'
                         ],
-                        \TYPO3\CMS\Core\Resource\File::FILETYPE_APPLICATION => [
+                        FileType::APPLICATION->value => [
                             'showitem' => '
                                 --palette--;LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;imageoverlayPalette,
                                 --palette--;;filePalette'
@@ -224,6 +227,36 @@ return [
                 'size' => 1,
                 'minitems' => 0,
                 'maxitems' => 1,
+            ],
+        ],
+        'brightness' => [
+            'label' => 'LLL:EXT:teaser2/Resources/Private/Language/locallang_db.xlf:tx_teaser2_domain_model_item.brightness',
+            'config' => [
+                'type' => 'number',
+                'range' => [
+                    'lower' => 0,
+                    'upper' => 200
+                ],
+                'slider' => [
+                    'step' => 1
+                ]
+            ],
+        ],
+        'layout' => [
+            'label' => 'LLL:EXT:teaser2/Resources/Private/Language/locallang_db.xlf:tx_teaser2_domain_model_item.layout',
+            'config' => [
+                'type' => 'select',
+                'renderType' => 'selectSingle',
+                'items' => [
+                    [
+                        'LLL:EXT:teaser2/Resources/Private/Language/locallang_db.xlf:tx_teaser2_domain_model_item.layout.options.bright_font',
+                        'bright',
+                    ],
+                    [
+                        'LLL:EXT:teaser2/Resources/Private/Language/locallang_db.xlf:tx_teaser2_domain_model_item.layout.options.dark_font',
+                        'dark',
+                    ],
+                ],
             ],
         ],
 

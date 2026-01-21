@@ -30,7 +30,7 @@ class SourceViewHelper extends AbstractTagBasedViewHelper
 
         parent::initializeArguments();
 
-        $this->registerArgument('image', 'object', 'a FAL object', true);
+        $this->registerArgument('image', 'object', 'a FAL object');
         $this->registerArgument('cropVariant', 'string', 'select a cropping variant, in case multiple croppings have been specified or stored in FileReference', false, 'default');
 
         $this->registerArgument('width', 'string', 'width of the image. This can be a numeric value representing the fixed width of the image in pixels. But you can also perform simple calculations by adding "m" or "c" to the value. See imgResource.width for possible options.');
@@ -53,6 +53,9 @@ class SourceViewHelper extends AbstractTagBasedViewHelper
      */
     public function render()
     {
+        if (($this->arguments['src'] === null && $this->arguments['image'] === null) || ($this->arguments['src'] !== null && $this->arguments['image'] !== null)) {
+            throw new Exception('You must either specify a string src or a File object.', 1382284106);
+        }
 
         $imageService = GeneralUtility::makeInstance(ImageService::class);
 
