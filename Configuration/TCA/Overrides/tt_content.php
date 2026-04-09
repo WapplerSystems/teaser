@@ -14,9 +14,11 @@ ExtensionManagementUtility::addTcaSelectItem(
     'tt_content',
     'CType',
     [
-        'LLL:EXT:teaser2/Resources/Private/Language/locallang.xlf:title',
-        'teaser2',
-        'content-teaser2'
+        'label' => 'LLL:EXT:teaser2/Resources/Private/Language/locallang.xlf:title',
+        'value' => 'teaser2',
+        'icon' => 'content-teaser2',
+        'group' => 'default',
+        'description' => 'Teaser element with image, title, text and link — ideal for highlights, hero sections and call-to-action areas.',
     ]
 );
 
@@ -89,7 +91,7 @@ $additionalColumns = [
             'renderType' => 'selectSingle',
             'default' => 'grid1',
             'items' => [
-                ['Layout 1', 'grid1'],
+                ['label' => 'Layout 1', 'value' => 'grid1'],
             ],
         ]
     ],

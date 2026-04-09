@@ -1,4 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
-  <path fill="#666" d="M12.053 11.026c-.238.07-.427.095-.674.095-2.033 0-5.017-7.1-5.017-9.462 0-.87.207-1.16.497-1.41C4.373.54 1.39 1.452.435 2.613c-.207.29-.332.746-.332 1.326C.103 7.628 4.04 16 6.82 16c1.283 0 3.45-2.114 5.233-4.974M10.756 0c2.57 0 5.14.415 5.14 1.865 0 2.943-1.865 6.508-2.818 6.508-1.7 0-3.814-4.725-3.814-7.088C9.264.207 9.68 0 10.756 0"></path>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+  <rect x="1" y="1" width="14" height="6.5" rx="1.5" fill="#4C6EF5"/>
+  <polygon points="6,6.5 8,4 10,6.5" fill="rgba(255,255,255,.5)"/>
+  <circle cx="11" cy="3.5" r=".7" fill="rgba(255,255,255,.5)"/>
+  <rect x="1" y="8.5" width="14" height="6.5" rx="1.5" fill="#E8EDFB" stroke="#4C6EF5" stroke-width=".6"/>
+  <rect x="3" y="9.8" width="6" height="1" rx=".5" fill="#4C6EF5"/>
+  <rect x="3" y="11.5" width="10" height=".7" rx=".35" fill="#B8C4E0"/>
+  <rect x="3" y="13" width="8" height=".7" rx=".35" fill="#B8C4E0"/>
 </svg>
