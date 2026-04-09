@@ -36,6 +36,12 @@
 			<trans-unit id="tx_teaser2_domain_model_item.media.description" resname="tx_teaser2_domain_model_item.media.description">
 				<source>Media</source>
 			</trans-unit>
+			<trans-unit id="tt_content.items">
+				<source>Teaser Items</source>
+			</trans-unit>
+			<trans-unit id="ce.description">
+				<source>Teaser element with image, title, text and link — ideal for highlights, hero sections and call-to-action areas.</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

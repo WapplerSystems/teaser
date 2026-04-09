@@ -51,6 +51,12 @@
 			<trans-unit id="tx_teaser_list.description" resname="tx_teaser_list.description">
 				<source>A teaser element with images and videos</source>
 			</trans-unit>
+			<trans-unit id="plugin.name">
+				<source>Teaser</source>
+			</trans-unit>
+			<trans-unit id="plugin.description">
+				<source>Teaser element with image, title, text and link — ideal for highlights, hero sections and call-to-action areas.</source>
+			</trans-unit>
 			<trans-unit id="tt_content.layout">
 				<source>Layout</source>
 			</trans-unit>

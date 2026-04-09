@@ -18,7 +18,7 @@ ExtensionManagementUtility::addTcaSelectItem(
         'value' => 'teaser2',
         'icon' => 'content-teaser2',
         'group' => 'default',
-        'description' => 'Teaser element with image, title, text and link — ideal for highlights, hero sections and call-to-action areas.',
+        'description' => 'LLL:EXT:teaser2/Resources/Private/Language/locallang.xlf:ce.description',
     ]
 );
 
