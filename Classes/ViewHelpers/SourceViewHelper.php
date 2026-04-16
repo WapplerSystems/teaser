@@ -25,7 +25,7 @@ class SourceViewHelper extends AbstractTagBasedViewHelper
      * Initialize
      * @return void
      */
-    public function initializeArguments()
+    public function initializeArguments(): void
     {
 
         parent::initializeArguments();

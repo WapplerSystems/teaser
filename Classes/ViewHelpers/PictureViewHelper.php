@@ -56,7 +56,7 @@ class PictureViewHelper extends \TYPO3Fluid\Fluid\Core\ViewHelper\AbstractViewHe
     protected $escapeOutput = false;
 
 
-    public function initializeArguments()
+    public function initializeArguments(): void
     {
         $this->registerArgument('additionalAttributes', 'array', 'array of additional attributes', false);
         $this->registerArgument('id', 'string', 'The element id', false);
