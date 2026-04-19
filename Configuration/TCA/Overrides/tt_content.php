@@ -32,7 +32,7 @@ $GLOBALS['TCA']['tt_content']['types']['teaser2'] = array_replace_recursive(
             --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
                 --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,
                 --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.headers;headers,
-                --palette--;Teaser;teaser2,
+                --palette--;LLL:EXT:teaser2/Resources/Private/Language/locallang_db.xlf:palette.teaser2;teaser2,
             --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
                 --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames;frames,
                 --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.appearanceLinks;appearanceLinks,
@@ -91,7 +91,7 @@ $additionalColumns = [
             'renderType' => 'selectSingle',
             'default' => 'grid1',
             'items' => [
-                ['label' => 'Layout 1', 'value' => 'grid1'],
+                ['label' => 'LLL:EXT:teaser2/Resources/Private/Language/locallang_db.xlf:tt_content.layout.grid1', 'value' => 'grid1'],
             ],
         ]
     ],

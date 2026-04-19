@@ -1,8 +1,48 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" target-language="de" datatype="plaintext" original="EXT:teaser/Resources/Private/Language/locallang_db.xlf" date="2026-04-09T00:00:00Z" product-name="teaser">
+	<file source-language="en" target-language="de" datatype="plaintext" original="EXT:teaser/Resources/Private/Language/locallang_db.xlf" date="2023-11-21T12:52:28Z" product-name="teaser">
 		<header/>
 		<body>
+			<trans-unit id="tx_teaser2_domain_model_item">
+				<source>Teaser item</source>
+				<target>Teaser-Eintrag</target>
+			</trans-unit>
+			<trans-unit id="tx_teaser2_domain_model_item.title">
+				<source>Title</source>
+				<target>Titel</target>
+			</trans-unit>
+			<trans-unit id="tx_teaser2_domain_model_item.subtitle">
+				<source>Subtitle</source>
+				<target>Untertitel</target>
+			</trans-unit>
+			<trans-unit id="tx_teaser2_domain_model_item.link">
+				<source>Link</source>
+				<target>Link</target>
+			</trans-unit>
+			<trans-unit id="tx_teaser2_domain_model_item.media">
+				<source>Image / Video</source>
+				<target>Bild / Video</target>
+			</trans-unit>
+			<trans-unit id="tx_teaser2_domain_model_item.layout">
+				<source>Font style</source>
+				<target>Schriftstil</target>
+			</trans-unit>
+			<trans-unit id="tx_teaser2_domain_model_item.layout.options.bright_font">
+				<source>Light text</source>
+				<target>Helle Schrift</target>
+			</trans-unit>
+			<trans-unit id="tx_teaser2_domain_model_item.layout.options.dark_font">
+				<source>Dark text</source>
+				<target>Dunkle Schrift</target>
+			</trans-unit>
+			<trans-unit id="tx_teaser2_domain_model_item.brightness">
+				<source>Image brightness (%)</source>
+				<target>Bildhelligkeit (%)</target>
+			</trans-unit>
+			<trans-unit id="palette.teaser2">
+				<source>Teaser</source>
+				<target>Teaser</target>
+			</trans-unit>
 			<trans-unit id="plugin.name">
 				<source>Teaser</source>
 				<target>Teaser</target>
@@ -12,8 +52,28 @@
 				<target>Teaser-Element mit Bild, Titel, Text und Link — ideal für Highlights, Hero-Bereiche und Call-to-Action-Flächen.</target>
 			</trans-unit>
 			<trans-unit id="tt_content.layout">
-				<source>Layout</source>
-				<target>Layout</target>
+				<source>Grid layout</source>
+				<target>Raster-Layout</target>
+			</trans-unit>
+			<trans-unit id="tt_content.layout.grid1">
+				<source>Grid</source>
+				<target>Raster</target>
+			</trans-unit>
+			<trans-unit id="readMore">
+				<source>Read more</source>
+				<target>Mehr erfahren</target>
+			</trans-unit>
+			<trans-unit id="image_crop_square">
+				<source>Square</source>
+				<target>Quadratisch</target>
+			</trans-unit>
+			<trans-unit id="image_crop_vertical1">
+				<source>Vertical</source>
+				<target>Hochformat</target>
+			</trans-unit>
+			<trans-unit id="image_crop_horizontal1">
+				<source>Horizontal</source>
+				<target>Querformat</target>
 			</trans-unit>
 		</body>
 	</file>

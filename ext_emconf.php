@@ -2,7 +2,7 @@
 
 $EM_CONF['teaser2'] = [
     'title' => 'Teaser',
-    'description' => 'This extension displays images and videos in a responsive grid layout with nice hover effect.',
+    'description' => 'Responsive teaser grid with image/video support, hover effects, brightness control and flexible layouts.',
     'category' => 'plugin',
     'author' => 'Sven Wappler',
     'author_email' => 'typo3@wappler.systems',
