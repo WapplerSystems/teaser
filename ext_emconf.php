@@ -11,7 +11,7 @@ $EM_CONF['teaser2'] = [
     'version' => '14.0.1',
     'constraints' => [
         'depends' => [
-            'typo3' => '14.4.0-14.4.99',
+            'typo3' => '14.0.0-14.4.99',
         ],
         'conflicts' => [],
         'suggests' => [],
