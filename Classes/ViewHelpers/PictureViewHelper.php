@@ -5,10 +5,9 @@ namespace WapplerSystems\Teaser\ViewHelpers;
 
 use TYPO3\CMS\Core\Resource\FileInterface;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
-use TYPO3\CMS\Extbase\Configuration\ConfigurationManager;
-use TYPO3\CMS\Extbase\Configuration\ConfigurationManagerInterface;
+use TYPO3\CMS\Core\View\ViewFactoryData;
+use TYPO3\CMS\Core\View\ViewFactoryInterface;
 use TYPO3\CMS\Extbase\Service\ImageService;
-use TYPO3\CMS\Fluid\View\TemplateView;
 
 /**
  *
@@ -72,7 +71,7 @@ class PictureViewHelper extends \TYPO3Fluid\Fluid\Core\ViewHelper\AbstractViewHe
 
     }
 
-    public function initialize()
+    public function initialize(): void
     {
 
         $this->image = $this->arguments['image'];
@@ -117,11 +116,10 @@ class PictureViewHelper extends \TYPO3Fluid\Fluid\Core\ViewHelper\AbstractViewHe
      */
     public function render()
     {
-
-
-        $view = new TemplateView();
-        $view->setTemplatePathAndFilename('EXT:teaser2/Resources/Private/Templates/Picture.html');
-
+        $viewFactory = GeneralUtility::makeInstance(ViewFactoryInterface::class);
+        $view = $viewFactory->create(new ViewFactoryData(
+            templatePathAndFilename: GeneralUtility::getFileAbsFileName('EXT:teaser2/Resources/Private/Templates/Picture.html'),
+        ));
 
         $view->assignMultiple([
             'image' => $this->image,

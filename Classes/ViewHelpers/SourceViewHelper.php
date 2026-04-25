@@ -51,7 +51,7 @@ class SourceViewHelper extends AbstractTagBasedViewHelper
      * @return string Rendered string
      * @api
      */
-    public function render()
+    public function render(): string
     {
         if (($this->arguments['src'] === null && $this->arguments['image'] === null) || ($this->arguments['src'] !== null && $this->arguments['image'] !== null)) {
             throw new Exception('You must either specify a string src or a File object.', 1382284106);
