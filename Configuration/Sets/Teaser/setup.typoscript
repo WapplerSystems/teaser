@@ -17,7 +17,7 @@ plugin.tx_teaser2 {
                             }
                             2 {
                                 media = (min-width: 576px) and (max-width: 767.98px)
-                                cropVariant = hoizontal1
+                                cropVariant = horizontal1
                                 maxWidth = 768
                             }
                             3 {
@@ -88,7 +88,6 @@ tt_content.teaser2 {
     }
     layoutRootPaths {
         0 = EXT:fluid_styled_content/Resources/Private/Layouts/
-        10 = EXT:teaser2/Resources/Private/Layouts/
         20 = {$plugin.tx_teaser2.view.layoutRootPath}
     }
 
